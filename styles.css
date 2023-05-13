@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+  background-color: whitesmoke;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #b2ecff, #a9f8ee, #72efce);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: "Courgette";
+  font-weight: bold;
+  color: darkred;
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: "Ubuntu";
+}
+
+h3 {
+  margin-top: 30px;
+  color: #B3C890;
+}
+
+hr {
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #8b9696;
+  border-width: 8px;
+  width: 5%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+p {
+  margin-top: 30px;
+}
+
+.title-container {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 30px;
+}
+
+.interests {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill {
+  display: flex;
+  width: 50%;
+  margin: 40px;
+  gap: 20px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20;
+  width: 40%;
+  font-weight: 600;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-title {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #73A9AD;
+}
+
+@media screen and (max-width: 800px) {
+  .skill {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 40px;
+    gap: 20px;
+  }
+}
